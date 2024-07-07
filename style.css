@@ -1,0 +1,147 @@
+/* 
+I det här dokumentet hittar du all styling för det här projektet. 
+Det är en hel del CSS som du inte har lärt dig ännu. Bland annat
+använder vi något som heter flexbox eller display: flex för att
+skapa själva layouten. Det behöver du inte bry dig om idag – det
+tar vi i morgon!
+*/
+
+/* Här är styling som gäller för hela sidan */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+/* Klassen container använder vi på flera ställen i vår HTML. Den
+gör att varje sektion tar upp 80% av sidans bredd och att det blir
+samma padding över hela sidan. Den styr med andra ord grund-layouten.
+Den behöver du inte ändra i så mycket om du inte vill ändra den
+övergripande strukturen */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+}
+.info-container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+}
+
+.header-container {
+  height: 150px;
+  padding: 5px;
+}
+
+/* Här är styling som gäller för rubriker och text */
+h1 {
+  color: white;
+  font-size: 65px;
+  font-weight: 700;
+  margin: 40px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+ .info {
+  padding: 5px;
+  font-size: 15px;
+  text-align: left;
+ }
+.info-title {
+  font-size: 25px;
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.header-title {
+  font-size: 45px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  background-color: black;
+  border-radius: 20px;
+  width: 450px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 5px 0px;
+}
+
+/* Här är styling som gäller för toppen på sidan */
+header {
+  /* En ny grej är att vi nu lägger in bilden i CSS
+  som en bakgrund, här redigerar du den. */
+  background-image: url("./images/background-image.jpg");
+  background-repeat: repeat-x;
+  /* Styr bilden */
+  padding: 10px 0;
+}
+
+/* Styling för knappen */
+header a {
+  color: white;
+  border: black solid;
+  background-color:cornflowerblue;
+
+  /* Gör att knappen får runda hörn */
+  border-radius: 80px;
+  width: 55px;
+  height: 55px;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+header button {
+  margin: 10px;
+}
+
+/* Styling för ikonerna */
+.icons {
+  /* Gör att dom lägger sig brevid varandra – men mer om detta i morgon. */
+  display:inline-flex;
+  justify-content: center;
+  align-items: top;
+  margin: 0 auto;
+}
+
+.icon {
+  margin: 40px;
+  width: 250px;
+}
+
+.icon img {
+  width: 150px;
+}
+
+/* Styling för "about-us"-sektionen */
+.about-us {
+  background-color: #dcdcdc;
+}
+
+/* Styling för footern på sidan */
+footer {
+  background-color: darkgray;
+  color: white;
+}
+footer p {
+  font-size: 11px;
+  font-weight: 200;
+  text-align: left;
+  margin: 0px;
+}

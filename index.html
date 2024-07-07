@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!-- Yay! Idag bygger vi en företagssite. Här är två saker som kan
+  vara bra att veta innan du börjar.
+  
+  1. Vi använder en klass som heter container på alla sektioner på
+  den här sidan. Den styr själva grundstrukturen, t.ex. hur bred varje
+  sektion är, hur texten ska vara formatterad m.m. Helt enkelt styling
+  som ska gälla för alla sektioner.
+  
+  2. Vi använder en bakgrundsbild till toppen av sidan. Det är ett vanlig
+  metod för att få text ovanpå en bild. Det som är lite annorlunda med denna
+  metod är att bilden läggs in i CSS-filen och inte i HTML-filen, precis som
+  om du hade gjort en bakgrundsfärg. Ta en titt i CSS-filen efter
+  background-image så ser du hur det är kopplat!
+
+      Lycka till! -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <!--En font som vi denna gång hämtar från google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Would you like to be happy?</title>
+  </head>
+
+  <body>
+
+    <!-- Här finns all HTML-kod som har med toppen på sidan att göra. Kom
+      ihåg att du hittar bilden i CSS-filen -->
+    <header>
+      <div class="header-container">
+        <h1 class="header-title">
+          Making people happy
+        </h1>
+        <a href="#"></br>Join</a>
+      </div>
+    </header>
+
+    <!-- Här finns all HTML-kod som har med de tre ikonerna att göra -->
+    <section class="what-we-do">
+      <h2>Chasing happiness</h2>
+      <div class="container">
+
+        <div class="icons">
+          <div class="icon">
+            <img src="./images/discover.jpg" />
+            <h3>Discover</h3>
+            <p>Discover new things. Things about the world, yourself or other people. Exploring and learning new things can open up a whole new world you never knew existed.</p>
+          </div>
+
+          <div class="icon">
+            <img src="./images/wellness.png" />
+            <h3>Take care of yourself</h3>
+            <p>Eat, sleep, exercise, repeat. Helping your body to function well will make you feel better overall.</p>
+          </div>
+
+          <div class="icon">
+            <img src="./images/charity.jpg" />
+            <h3>Help others</h3>
+            <p>Help those less fortunate than yourself. By volonteering your time and effort to make others happier, you will in return feel better yourself.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Här finns all HTML-kod som har med "about us"-sektionen att göra -->
+    <section class="about-us">
+      <div class="info-container">
+        <h2 class="info-title">Not a cult, </br>promise</h2>
+        <p class="info">
+          Imagine being part of a close-knit, supportive community where everyone shares your 
+          values and aspirations. Our group is dedicated to personal growth, spiritual enlightenment, 
+          and a deeper understanding of the universe. We offer a unique opportunity to connect 
+          with like-minded individuals who are committed to bettering themselves and the world 
+          around them. In our community, you'll find a sense of belonging and purpose. We have regular 
+          gatherings where we share knowledge, meditate, and participate in enriching activities 
+          that foster inner peace and happiness. Our leaders are wise and compassionate, guiding 
+          us towards a more fulfilled and harmonious life. We believe in the power of collective 
+          effort and mutual support. By joining us, you'll be part of a family that always has your 
+          back, helping you navigate life's challenges and celebrate its joys. We prioritize holistic 
+          well-being, encouraging practices that nourish the mind, body, and soul. You'll also have 
+          access to exclusive teachings and resources that aren't available anywhere else. Our 
+          programs are designed to unlock your full potential and help you achieve your dreams. 
+          Whether you're seeking personal transformation, spiritual awakening, or simply a community 
+          that feels like home, our group offers a sanctuary where you can thrive. Come and experience 
+          the warmth, wisdom, and transformative power of our community. We welcome you with open 
+          arms and look forward to embarking on this incredible journey together.
+        </br></br>
+        Once again, not a cult.
+        </br></br>
+        Read more about our <a href="#">spiritual community</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Här kan du lägga till kod om du vill fylla i något i footern -->
+    <footer>
+      <p>We are not a cult.</p>
+    </footer>
+  </body>
+</html>
